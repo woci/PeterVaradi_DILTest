@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "158D8746-067B-45E6-8F58-F645B8DF3F63"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C193C017-46C7-4394-AD0A-1A4FB7152075"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ghost Drawer/Renderer/Renderer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "render(scheduledPoint:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C193C017-46C7-4394-AD0A-1A4FB7152075 - f120bcd9cc99daa5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ghost_Drawer.Renderer.render(scheduledPoint: Ghost_Drawer.ScheduledPoint) -&gt; ()"
+                  moduleName = "Ghost Drawer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Peter_Varadi3/Documents/workspace/Diligent/Ghost%20Drawer/Ghost%20Drawer/Renderer/Renderer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "2281">
+               </Location>
+               <Location
+                  uuid = "C193C017-46C7-4394-AD0A-1A4FB7152075 - f120bcd9cc99ddff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ghost_Drawer.Renderer.render(scheduledPoint: Ghost_Drawer.ScheduledPoint) -&gt; ()"
+                  moduleName = "Ghost Drawer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Peter_Varadi3/Documents/workspace/Diligent/Ghost%20Drawer/Ghost%20Drawer/Renderer/Renderer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "2301">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2CB8D907-7173-44C0-AAA9-5A4355058597"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ghost Drawer/Renderer/Renderer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "render(scheduledPoint:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2CB8D907-7173-44C0-AAA9-5A4355058597 - f120bcd9cc99ddbd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ghost_Drawer.Renderer.render(scheduledPoint: Ghost_Drawer.ScheduledPoint) -&gt; ()"
+                  moduleName = "Ghost Drawer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Peter_Varadi3/Documents/workspace/Diligent/Ghost%20Drawer/Ghost%20Drawer/Renderer/Renderer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "2773">
+               </Location>
+               <Location
+                  uuid = "2CB8D907-7173-44C0-AAA9-5A4355058597 - f120bcd9cc99ddff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ghost_Drawer.Renderer.render(scheduledPoint: Ghost_Drawer.ScheduledPoint) -&gt; ()"
+                  moduleName = "Ghost Drawer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Peter_Varadi3/Documents/workspace/Diligent/Ghost%20Drawer/Ghost%20Drawer/Renderer/Renderer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "2301">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

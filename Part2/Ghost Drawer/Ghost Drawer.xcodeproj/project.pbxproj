@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		633856622A4DCAF200436A59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856612A4DCAF200436A59 /* AppDelegate.swift */; };
+		633856642A4DCAF200436A59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856632A4DCAF200436A59 /* SceneDelegate.swift */; };
+		633856662A4DCAF200436A59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856652A4DCAF200436A59 /* ViewController.swift */; };
+		633856692A4DCAF200436A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633856672A4DCAF200436A59 /* Main.storyboard */; };
+		6338566B2A4DCAF500436A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6338566A2A4DCAF500436A59 /* Assets.xcassets */; };
+		6338566E2A4DCAF500436A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6338566C2A4DCAF500436A59 /* LaunchScreen.storyboard */; };
+		633856792A4DCAF600436A59 /* Ghost_DrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856782A4DCAF600436A59 /* Ghost_DrawerTests.swift */; };
+		633856832A4DCAF600436A59 /* Ghost_DrawerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856822A4DCAF600436A59 /* Ghost_DrawerUITests.swift */; };
+		633856852A4DCAF600436A59 /* Ghost_DrawerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856842A4DCAF600436A59 /* Ghost_DrawerUITestsLaunchTests.swift */; };
+		633856932A4DCC4C00436A59 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856922A4DCC4C00436A59 /* Renderer.swift */; };
+		633856962A4DD0FF00436A59 /* Pencil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856952A4DD0FF00436A59 /* Pencil.swift */; };
+		633856982A4DD6CD00436A59 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856972A4DD6CD00436A59 /* Drawing.swift */; };
+		6338569A2A4DD81000436A59 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856992A4DD81000436A59 /* Point.swift */; };
+		63A026872A4E9470007161A8 /* DrawerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A026862A4E9470007161A8 /* DrawerPresenter.swift */; };
+		63A026892A4E9C0F007161A8 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A026882A4E9C0F007161A8 /* Scheduler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		633856752A4DCAF600436A59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633856562A4DCAF200436A59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6338565D2A4DCAF200436A59;
+			remoteInfo = "Ghost Drawer";
+		};
+		6338567F2A4DCAF600436A59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633856562A4DCAF200436A59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6338565D2A4DCAF200436A59;
+			remoteInfo = "Ghost Drawer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6338565E2A4DCAF200436A59 /* Ghost Drawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ghost Drawer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		633856612A4DCAF200436A59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		633856632A4DCAF200436A59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		633856652A4DCAF200436A59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		633856682A4DCAF200436A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6338566A2A4DCAF500436A59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6338566D2A4DCAF500436A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6338566F2A4DCAF500436A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633856742A4DCAF600436A59 /* Ghost DrawerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ghost DrawerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		633856782A4DCAF600436A59 /* Ghost_DrawerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghost_DrawerTests.swift; sourceTree = "<group>"; };
+		6338567E2A4DCAF600436A59 /* Ghost DrawerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ghost DrawerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		633856822A4DCAF600436A59 /* Ghost_DrawerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghost_DrawerUITests.swift; sourceTree = "<group>"; };
+		633856842A4DCAF600436A59 /* Ghost_DrawerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghost_DrawerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		633856922A4DCC4C00436A59 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		633856952A4DD0FF00436A59 /* Pencil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pencil.swift; sourceTree = "<group>"; };
+		633856972A4DD6CD00436A59 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
+		633856992A4DD81000436A59 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		63A026862A4E9470007161A8 /* DrawerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerPresenter.swift; sourceTree = "<group>"; };
+		63A026882A4E9C0F007161A8 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6338565B2A4DCAF200436A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633856712A4DCAF600436A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6338567B2A4DCAF600436A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		633856552A4DCAF200436A59 = {
+			isa = PBXGroup;
+			children = (
+				633856602A4DCAF200436A59 /* Ghost Drawer */,
+				633856772A4DCAF600436A59 /* Ghost DrawerTests */,
+				633856812A4DCAF600436A59 /* Ghost DrawerUITests */,
+				6338565F2A4DCAF200436A59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6338565F2A4DCAF200436A59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6338565E2A4DCAF200436A59 /* Ghost Drawer.app */,
+				633856742A4DCAF600436A59 /* Ghost DrawerTests.xctest */,
+				6338567E2A4DCAF600436A59 /* Ghost DrawerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		633856602A4DCAF200436A59 /* Ghost Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				633856942A4DD0EA00436A59 /* Model */,
+				633856912A4DCC3900436A59 /* Renderer */,
+				63A026852A4E9453007161A8 /* Module */,
+				633856612A4DCAF200436A59 /* AppDelegate.swift */,
+				633856632A4DCAF200436A59 /* SceneDelegate.swift */,
+				633856672A4DCAF200436A59 /* Main.storyboard */,
+				6338566A2A4DCAF500436A59 /* Assets.xcassets */,
+				6338566C2A4DCAF500436A59 /* LaunchScreen.storyboard */,
+				6338566F2A4DCAF500436A59 /* Info.plist */,
+				63A026882A4E9C0F007161A8 /* Scheduler.swift */,
+			);
+			path = "Ghost Drawer";
+			sourceTree = "<group>";
+		};
+		633856772A4DCAF600436A59 /* Ghost DrawerTests */ = {
+			isa = PBXGroup;
+			children = (
+				633856782A4DCAF600436A59 /* Ghost_DrawerTests.swift */,
+			);
+			path = "Ghost DrawerTests";
+			sourceTree = "<group>";
+		};
+		633856812A4DCAF600436A59 /* Ghost DrawerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				633856822A4DCAF600436A59 /* Ghost_DrawerUITests.swift */,
+				633856842A4DCAF600436A59 /* Ghost_DrawerUITestsLaunchTests.swift */,
+			);
+			path = "Ghost DrawerUITests";
+			sourceTree = "<group>";
+		};
+		633856912A4DCC3900436A59 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				633856922A4DCC4C00436A59 /* Renderer.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		633856942A4DD0EA00436A59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				633856952A4DD0FF00436A59 /* Pencil.swift */,
+				633856972A4DD6CD00436A59 /* Drawing.swift */,
+				633856992A4DD81000436A59 /* Point.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63A026852A4E9453007161A8 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				633856652A4DCAF200436A59 /* ViewController.swift */,
+				63A026862A4E9470007161A8 /* DrawerPresenter.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6338565D2A4DCAF200436A59 /* Ghost Drawer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633856882A4DCAF600436A59 /* Build configuration list for PBXNativeTarget "Ghost Drawer" */;
+			buildPhases = (
+				6338565A2A4DCAF200436A59 /* Sources */,
+				6338565B2A4DCAF200436A59 /* Frameworks */,
+				6338565C2A4DCAF200436A59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ghost Drawer";
+			productName = "Ghost Drawer";
+			productReference = 6338565E2A4DCAF200436A59 /* Ghost Drawer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		633856732A4DCAF600436A59 /* Ghost DrawerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6338568B2A4DCAF600436A59 /* Build configuration list for PBXNativeTarget "Ghost DrawerTests" */;
+			buildPhases = (
+				633856702A4DCAF600436A59 /* Sources */,
+				633856712A4DCAF600436A59 /* Frameworks */,
+				633856722A4DCAF600436A59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				633856762A4DCAF600436A59 /* PBXTargetDependency */,
+			);
+			name = "Ghost DrawerTests";
+			productName = "Ghost DrawerTests";
+			productReference = 633856742A4DCAF600436A59 /* Ghost DrawerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6338567D2A4DCAF600436A59 /* Ghost DrawerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6338568E2A4DCAF600436A59 /* Build configuration list for PBXNativeTarget "Ghost DrawerUITests" */;
+			buildPhases = (
+				6338567A2A4DCAF600436A59 /* Sources */,
+				6338567B2A4DCAF600436A59 /* Frameworks */,
+				6338567C2A4DCAF600436A59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				633856802A4DCAF600436A59 /* PBXTargetDependency */,
+			);
+			name = "Ghost DrawerUITests";
+			productName = "Ghost DrawerUITests";
+			productReference = 6338567E2A4DCAF600436A59 /* Ghost DrawerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		633856562A4DCAF200436A59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6338565D2A4DCAF200436A59 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					633856732A4DCAF600436A59 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 6338565D2A4DCAF200436A59;
+					};
+					6338567D2A4DCAF600436A59 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 6338565D2A4DCAF200436A59;
+					};
+				};
+			};
+			buildConfigurationList = 633856592A4DCAF200436A59 /* Build configuration list for PBXProject "Ghost Drawer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 633856552A4DCAF200436A59;
+			productRefGroup = 6338565F2A4DCAF200436A59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6338565D2A4DCAF200436A59 /* Ghost Drawer */,
+				633856732A4DCAF600436A59 /* Ghost DrawerTests */,
+				6338567D2A4DCAF600436A59 /* Ghost DrawerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6338565C2A4DCAF200436A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6338566E2A4DCAF500436A59 /* LaunchScreen.storyboard in Resources */,
+				6338566B2A4DCAF500436A59 /* Assets.xcassets in Resources */,
+				633856692A4DCAF200436A59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633856722A4DCAF600436A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6338567C2A4DCAF600436A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6338565A2A4DCAF200436A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A026892A4E9C0F007161A8 /* Scheduler.swift in Sources */,
+				633856932A4DCC4C00436A59 /* Renderer.swift in Sources */,
+				633856662A4DCAF200436A59 /* ViewController.swift in Sources */,
+				633856982A4DD6CD00436A59 /* Drawing.swift in Sources */,
+				633856622A4DCAF200436A59 /* AppDelegate.swift in Sources */,
+				6338569A2A4DD81000436A59 /* Point.swift in Sources */,
+				63A026872A4E9470007161A8 /* DrawerPresenter.swift in Sources */,
+				633856962A4DD0FF00436A59 /* Pencil.swift in Sources */,
+				633856642A4DCAF200436A59 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633856702A4DCAF600436A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633856792A4DCAF600436A59 /* Ghost_DrawerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6338567A2A4DCAF600436A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633856832A4DCAF600436A59 /* Ghost_DrawerUITests.swift in Sources */,
+				633856852A4DCAF600436A59 /* Ghost_DrawerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		633856762A4DCAF600436A59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6338565D2A4DCAF200436A59 /* Ghost Drawer */;
+			targetProxy = 633856752A4DCAF600436A59 /* PBXContainerItemProxy */;
+		};
+		633856802A4DCAF600436A59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6338565D2A4DCAF200436A59 /* Ghost Drawer */;
+			targetProxy = 6338567F2A4DCAF600436A59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		633856672A4DCAF200436A59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				633856682A4DCAF200436A59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6338566C2A4DCAF500436A59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6338566D2A4DCAF500436A59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		633856862A4DCAF600436A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		633856872A4DCAF600436A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		633856892A4DCAF600436A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8HAMLM3VN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ghost Drawer/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.peter.varadi.Ghost-Drawer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6338568A2A4DCAF600436A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8HAMLM3VN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ghost Drawer/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.peter.varadi.Ghost-Drawer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6338568C2A4DCAF600436A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8HAMLM3VN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.peter.varadi.Ghost-DrawerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ghost Drawer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ghost Drawer";
+			};
+			name = Debug;
+		};
+		6338568D2A4DCAF600436A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8HAMLM3VN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.peter.varadi.Ghost-DrawerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ghost Drawer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ghost Drawer";
+			};
+			name = Release;
+		};
+		6338568F2A4DCAF600436A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8HAMLM3VN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.peter.varadi.Ghost-DrawerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ghost Drawer";
+			};
+			name = Debug;
+		};
+		633856902A4DCAF600436A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8HAMLM3VN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.peter.varadi.Ghost-DrawerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ghost Drawer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		633856592A4DCAF200436A59 /* Build configuration list for PBXProject "Ghost Drawer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633856862A4DCAF600436A59 /* Debug */,
+				633856872A4DCAF600436A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		633856882A4DCAF600436A59 /* Build configuration list for PBXNativeTarget "Ghost Drawer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633856892A4DCAF600436A59 /* Debug */,
+				6338568A2A4DCAF600436A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6338568B2A4DCAF600436A59 /* Build configuration list for PBXNativeTarget "Ghost DrawerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6338568C2A4DCAF600436A59 /* Debug */,
+				6338568D2A4DCAF600436A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6338568E2A4DCAF600436A59 /* Build configuration list for PBXNativeTarget "Ghost DrawerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6338568F2A4DCAF600436A59 /* Debug */,
+				633856902A4DCAF600436A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 633856562A4DCAF200436A59 /* Project object */;
+}
