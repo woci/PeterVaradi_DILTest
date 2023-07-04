@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class Renderer {
+class Renderer: RendererService {
     var canvas: UIView
 
     init(canvas: UIView) {

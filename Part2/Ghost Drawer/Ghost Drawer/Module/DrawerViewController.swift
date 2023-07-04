@@ -1,28 +1,23 @@
 //
-//  ViewController.swift
+//  DrawerViewController.swift
 //  Ghost Drawer
 //
 //  Created by Peter Varadi3 on 2023. 06. 29..
 //
 
 import UIKit
+import SwinjectStoryboard
 
-protocol View: AnyObject {
+protocol DrawerView: AnyObject {
     func render(scheduledPoint: ScheduledPoint)
 }
 
-class ViewController: UIViewController, View {
+class DrawerViewController: UIViewController, DrawerView {
 
     @IBOutlet weak var canvas: UIView!
     @IBOutlet weak var pencilSelector: UISegmentedControl!
-    var renderer: Renderer!
-    var presenter: DrawerPresenter!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        presenter = DrawerPresenter(view: self)
-        renderer = Renderer(canvas: canvas)
-    }
+    var renderer: RendererService!
+    var presenter: DrawerPresenterInput!
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {
@@ -43,9 +38,26 @@ class ViewController: UIViewController, View {
     }
 }
 
-extension ViewController {
+extension DrawerViewController {
     func render(scheduledPoint: ScheduledPoint) {
         renderer.render(scheduledPoint: scheduledPoint)
     }
 }
 
+extension DrawerViewController {
+    static func create() -> DrawerViewController {
+        let sb = SwinjectStoryboard.create(name: "Main",
+                                           bundle: nil,
+                                           container: SwinjectContainer.shared.container)
+        let viewController = sb.instantiateViewController(withIdentifier: DrawerViewController.storyBoardIdentifier)
+            as! DrawerViewController
+
+        return viewController
+    }
+}
+
+extension UIViewController {
+    static var storyBoardIdentifier: String {
+        String(describing: self) + "StoryboardIdentifer"
+    }
+}

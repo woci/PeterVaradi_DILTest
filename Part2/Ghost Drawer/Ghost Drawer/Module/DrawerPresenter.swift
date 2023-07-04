@@ -7,13 +7,23 @@
 
 import Foundation
 
-class DrawerPresenter {
-    weak var view: View?
-    var drawing: Drawing?
-    var pencils: [Pencil]
-    var scheduler: Scheduler
+protocol DrawerPresenterInput: AnyObject, Injectable {
+    var view: DrawerView? { get set }
+    var drawing: Drawing? { get set }
+    var pencils: [Drawable] { get set }
+    var scheduler: SchedulerService { get set }
+    func startDrawing(position: CGPoint, timeStamp: TimeInterval, pencilIndex: Int)
+    func updateDrawing(position: CGPoint, timeStamp: TimeInterval)
+    func finishDrawing()
+}
 
-    init(view: View? = nil, drawing: Drawing? = nil, pencils: [Pencil] = [Pencil(color: .red, delay: 1.0), Pencil(color: .green, delay: 5.0), Pencil(color: .blue, delay: 3.0), Pencil(color: .white, delay: 2.0)], scheduler: Scheduler = Scheduler()) {
+class DrawerPresenter: DrawerPresenterInput {
+    weak var view: DrawerView?
+    var drawing: Drawing?
+    var pencils: [Drawable]
+    var scheduler: SchedulerService
+
+    init(view: DrawerView? = nil, drawing: Drawing? = nil, pencils: [Drawable], scheduler: SchedulerService) {
         self.view = view
         self.drawing = drawing
         self.pencils = pencils
@@ -36,7 +46,7 @@ class DrawerPresenter {
     }
 }
 
-extension DrawerPresenter: SchedulerProtocol {
+extension DrawerPresenter: SchedulerDelegate {
     func draw(scheduledPoint: ScheduledPoint) {
         self.view?.render(scheduledPoint: scheduledPoint)
     }

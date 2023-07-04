@@ -8,19 +8,11 @@
 import Foundation
 import UIKit
 
-
-protocol SchedulerProtocol {
+protocol SchedulerDelegate: AnyObject {
     func draw(scheduledPoint: ScheduledPoint)
 }
 
-struct ScheduledPoint {
-    var from: CGPoint
-    var to: CGPoint
-    var color: UIColor
-    var renderInterval: TimeInterval
-}
-
-struct Scheduler {
+struct Scheduler: SchedulerService {
     /**
      timestamps:
      0----1----2----3----4----5----6----7----8----9----10----11----12----13
@@ -35,20 +27,25 @@ struct Scheduler {
      0----1----2----3----4----5----6----7----8----9----10----11----12----13
                            |   G      |
      */
-    var delegate: SchedulerProtocol?
+    var delegate: SchedulerDelegate?
+    var timer: TimerService
 
-    init(delegate: SchedulerProtocol? = Optional.none) {
+    init(delegate: SchedulerDelegate? = Optional.none, timer: TimerService ) {
         self.delegate = delegate
+        self.timer = timer
     }
 
     func scheduleDrawing(drawing: Drawing) {
         var timerToFire = drawing.pencil.delay
         for index in 0..<drawing.points.count {
             if drawing.points.count == 1 {
-                Timer.scheduledTimer(withTimeInterval: drawing.pencil.delay, repeats: false) { timer in
-                    timer.invalidate()
+                let _ = timer.scheduledTimer(withTimeInterval: drawing.pencil.delay, repeats: false) { timer in
                     self.delegate?.draw(scheduledPoint: ScheduledPoint(from: drawing.points[index].position, to: drawing.points[index].position, color: drawing.pencil.color, renderInterval: 0))
                 }
+//                Timer.scheduledTimer(withTimeInterval: drawing.pencil.delay, repeats: false) { timer in
+//                    timer.invalidate()
+//                    self.delegate?.draw(scheduledPoint: ScheduledPoint(from: drawing.points[index].position, to: drawing.points[index].position, color: drawing.pencil.color, renderInterval: 0))
+//                }
             } else {
                 if index < drawing.points.count - 2 {
                     let fromPoint = drawing.points[index]
@@ -56,10 +53,14 @@ struct Scheduler {
                     let renderInterval = toPoint.timestamp - fromPoint.timestamp
                     timerToFire += renderInterval
 
-                    Timer.scheduledTimer(withTimeInterval: timerToFire, repeats: false) { timer in
-                        timer.invalidate()
+                    let _ = timer.scheduledTimer(withTimeInterval: timerToFire, repeats: false) { timer in
                         self.delegate?.draw(scheduledPoint: ScheduledPoint(from: fromPoint.position, to: toPoint.position, color: drawing.pencil.color, renderInterval: renderInterval))
                     }
+
+//                    Timer.scheduledTimer(withTimeInterval: timerToFire, repeats: false) { timer in
+//                        timer.invalidate()
+//                        self.delegate?.draw(scheduledPoint: ScheduledPoint(from: fromPoint.position, to: toPoint.position, color: drawing.pencil.color, renderInterval: renderInterval))
+//                    }
                 }
             }
         }
