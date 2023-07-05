@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "57A25395-DD38-4D1D-8BBC-D0543016529B",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Ghost Drawer.xcodeproj",
+      "identifier" : "6338565D2A4DCAF200436A59",
+      "name" : "Ghost Drawer"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Ghost Drawer.xcodeproj",
+        "identifier" : "633856732A4DCAF600436A59",
+        "name" : "Ghost DrawerTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Ghost Drawer.xcodeproj",
+        "identifier" : "6338567D2A4DCAF600436A59",
+        "name" : "Ghost DrawerUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
