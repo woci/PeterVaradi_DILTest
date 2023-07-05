@@ -1,5 +1,5 @@
 //
-//  ScheduledPoint.swift
+//  ScheduledPath.swift
 //  Ghost Drawer
 //
 //  Created by Peter Varadi3 on 2023. 07. 04..

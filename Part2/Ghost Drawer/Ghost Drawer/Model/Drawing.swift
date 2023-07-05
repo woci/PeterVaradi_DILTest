@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct Drawing {
+struct Drawing: Equatable {
+    static func == (lhs: Drawing, rhs: Drawing) -> Bool {
+        lhs.points == rhs.points
+        && lhs.pencil.asEquatable() == rhs.pencil.asEquatable()
+    }
     var points: [Point]
-    var pencil: Drawable
+    var pencil: any Drawer
 }

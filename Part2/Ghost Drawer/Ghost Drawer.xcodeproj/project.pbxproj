@@ -14,7 +14,6 @@
 		633856692A4DCAF200436A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633856672A4DCAF200436A59 /* Main.storyboard */; };
 		6338566B2A4DCAF500436A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6338566A2A4DCAF500436A59 /* Assets.xcassets */; };
 		6338566E2A4DCAF500436A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6338566C2A4DCAF500436A59 /* LaunchScreen.storyboard */; };
-		633856792A4DCAF600436A59 /* Ghost_DrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856782A4DCAF600436A59 /* Ghost_DrawerTests.swift */; };
 		633856832A4DCAF600436A59 /* Ghost_DrawerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856822A4DCAF600436A59 /* Ghost_DrawerUITests.swift */; };
 		633856852A4DCAF600436A59 /* Ghost_DrawerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856842A4DCAF600436A59 /* Ghost_DrawerUITestsLaunchTests.swift */; };
 		633856962A4DD0FF00436A59 /* Pencil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856952A4DD0FF00436A59 /* Pencil.swift */; };
@@ -86,7 +85,6 @@
 		6338566D2A4DCAF500436A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6338566F2A4DCAF500436A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		633856742A4DCAF600436A59 /* Ghost DrawerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ghost DrawerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		633856782A4DCAF600436A59 /* Ghost_DrawerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghost_DrawerTests.swift; sourceTree = "<group>"; };
 		6338567E2A4DCAF600436A59 /* Ghost DrawerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ghost DrawerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		633856822A4DCAF600436A59 /* Ghost_DrawerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghost_DrawerUITests.swift; sourceTree = "<group>"; };
 		633856842A4DCAF600436A59 /* Ghost_DrawerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghost_DrawerUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -201,7 +199,6 @@
 			children = (
 				638B4F282A55B18400EBBE5D /* DrawerPresenterTests.swift */,
 				638B4F0F2A55822E00EBBE5D /* SchedulerTests.swift */,
-				633856782A4DCAF600436A59 /* Ghost_DrawerTests.swift */,
 			);
 			path = "Ghost DrawerTests";
 			sourceTree = "<group>";
@@ -558,7 +555,6 @@
 				638B4F1A2A5590E400EBBE5D /* Injectable.swift in Sources */,
 				638B4F182A558E6400EBBE5D /* Scheduler.swift in Sources */,
 				638B4F202A559C3000EBBE5D /* Scheduler+register.swift in Sources */,
-				633856792A4DCAF600436A59 /* Ghost_DrawerTests.swift in Sources */,
 				638B4F212A559C3300EBBE5D /* DrawViewController.swift in Sources */,
 				638B4F102A55822E00EBBE5D /* SchedulerTests.swift in Sources */,
 				638B4F142A558E5700EBBE5D /* Point.swift in Sources */,

@@ -10,7 +10,7 @@ import Foundation
 protocol DrawerPresenterService: AnyObject, Injectable {
     var view: DrawerView? { get set }
     var drawing: Drawing? { get set }
-    var pencils: [Drawable] { get set }
+    var pencils: [Drawer] { get set }
     var scheduler: SchedulerService { get set }
     func startDrawing(position: CGPoint, timeStamp: TimeInterval, pencilIndex: Int)
     func updateDrawing(position: CGPoint, timeStamp: TimeInterval)
@@ -20,10 +20,10 @@ protocol DrawerPresenterService: AnyObject, Injectable {
 class DrawerPresenter: DrawerPresenterService {
     weak var view: DrawerView?
     var drawing: Drawing?
-    var pencils: [Drawable]
+    var pencils: [Drawer]
     var scheduler: SchedulerService
 
-    init(view: DrawerView? = nil, drawing: Drawing? = nil, pencils: [Drawable], scheduler: SchedulerService) {
+    init(view: DrawerView? = nil, drawing: Drawing? = nil, pencils: [Drawer], scheduler: SchedulerService) {
         self.view = view
         self.drawing = drawing
         self.pencils = pencils
@@ -46,7 +46,7 @@ class DrawerPresenter: DrawerPresenterService {
 }
 
 extension DrawerPresenter: SchedulerDelegate {
-    func draw(scheduledPoint: ScheduledPoint) {
-        self.view?.render(scheduledPoint: scheduledPoint)
+    func draw(scheduledPath: ScheduledPath) {
+        self.view?.render(scheduledPath: scheduledPath)
     }
 }

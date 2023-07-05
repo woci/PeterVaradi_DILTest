@@ -109,21 +109,21 @@ class TestSchedulerDelegate: SchedulerDelegate {
         self.scheduler = scheduler
     }
 
-    func draw(scheduledPoint: ScheduledPoint) {
+    func draw(scheduledPath: ScheduledPath) {
         isDrawingExpectation?.fulfill()
-        self.expectedRenderIntervals?.removeAll(where: { $0 == scheduledPoint.renderInterval })
+        self.expectedRenderIntervals?.removeAll(where: { $0 == scheduledPath.renderInterval })
         if let expectedRenderIntervals = self.expectedRenderIntervals, expectedRenderIntervals.isEmpty {
             renderIntervalsExpectation?.fulfill()
         }
     }
 }
 
-struct DummyPencil: Drawable {
+struct DummyPencil: Drawer, Equatable {
     var color: UIColor = .black
     var delay: TimeInterval = 0
 }
 
-struct MockPencil: Drawable {
+struct MockPencil: Drawer, Equatable {
     var color: UIColor = .black
     var delay: TimeInterval = 1
 }

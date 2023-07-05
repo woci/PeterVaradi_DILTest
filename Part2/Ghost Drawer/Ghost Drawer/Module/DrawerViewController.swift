@@ -9,7 +9,7 @@ import UIKit
 import SwinjectStoryboard
 
 protocol DrawerView: AnyObject {
-    func render(scheduledPoint: ScheduledPoint)
+    func render(scheduledPath: ScheduledPath)
 }
 
 class DrawerViewController: UIViewController, DrawerView {
@@ -42,19 +42,19 @@ class DrawerViewController: UIViewController, DrawerView {
 }
 
 extension DrawerViewController {
-    func render(scheduledPoint: ScheduledPoint) {
+    func render(scheduledPath: ScheduledPath) {
         let shapeLayer = CAShapeLayer()
         shapeLayer.lineCap = .round
         shapeLayer.lineWidth = 20
-        shapeLayer.strokeColor = scheduledPoint.color.cgColor
+        shapeLayer.strokeColor = scheduledPath.color.cgColor
 
         let path = UIBezierPath()
-        path.move(to: scheduledPoint.from)
-        path.addLine(to: scheduledPoint.to)
+        path.move(to: scheduledPath.from)
+        path.addLine(to: scheduledPath.to)
         shapeLayer.path = path.cgPath
 
         let animation = CABasicAnimation(keyPath: "opacity")
-        animation.duration = scheduledPoint.renderInterval
+        animation.duration = scheduledPath.renderInterval
         animation.fromValue = 0.0
         animation.toValue = 1.0
         animation.isRemovedOnCompletion = false

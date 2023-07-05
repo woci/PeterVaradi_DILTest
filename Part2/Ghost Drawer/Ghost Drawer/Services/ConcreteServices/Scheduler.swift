@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol SchedulerDelegate: AnyObject {
-    func draw(scheduledPoint: ScheduledPoint)
+    func draw(scheduledPath: ScheduledPath)
 }
 
 final class Scheduler: SchedulerService {
@@ -42,12 +42,12 @@ final class Scheduler: SchedulerService {
 
         guard drawing.points.count > 1 else {
             let fromPoint = drawing.points[0]
-            let scheduledPoint = ScheduledPoint(from: fromPoint.position,
+            let scheduledPath = ScheduledPath(from: fromPoint.position,
                                                 to: fromPoint.position,
                                                 color: drawing.pencil.color,
                                                 renderInterval: 0)
 
-            schedule(timerToFire: drawing.pencil.delay, scheduledPoint: scheduledPoint)
+            schedule(timerToFire: drawing.pencil.delay, scheduledPath: scheduledPath)
             return
         }
 
@@ -64,12 +64,12 @@ final class Scheduler: SchedulerService {
 
 
 
-                let scheduledPoint = ScheduledPoint(from: fromPoint.position,
+                let scheduledPath = ScheduledPath(from: fromPoint.position,
                                                     to: toPoint.position,
                                                     color: drawing.pencil.color,
                                                     renderInterval: renderInterval)
 
-                schedule(timerToFire: timerToFire, scheduledPoint: scheduledPoint)
+                schedule(timerToFire: timerToFire, scheduledPath: scheduledPath)
             }
         }
     }
@@ -83,9 +83,9 @@ final class Scheduler: SchedulerService {
         renderInterval + previousTimerToFireInterval
     }
 
-    private func schedule(timerToFire: TimeInterval, scheduledPoint: ScheduledPoint) {
+    private func schedule(timerToFire: TimeInterval, scheduledPath: ScheduledPath) {
         let _ = timer.scheduledTimer(withTimeInterval: timerToFire, repeats: false) { timer in
-            self.delegate?.draw(scheduledPoint: scheduledPoint)
+            self.delegate?.draw(scheduledPath: scheduledPath)
         }
     }
 }

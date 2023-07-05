@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Point {
+struct Point: Equatable {
     var position: CGPoint
     var timestamp: TimeInterval
 }
