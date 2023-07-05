@@ -15,19 +15,8 @@ class SwinjectContainer {
 
     func registerDependencies() {
         ProxyTimer.register()
-        Renderer.register()
         Scheduler.register()
         DrawerPresenter.register()
         DrawerViewController.register()
-//        ProfilePresenter.register()
-//        RESTUserService.register()
-//        ProfileUserService.register()
-//        BUserService.register()
-//        URLSession.register()
-//        ImageLoader.register()
-//
-//        ProfileViewController.register()
-//        BViewController.register()
     }
-
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol DrawerPresenterInput: AnyObject, Injectable {
+protocol DrawerPresenterService: AnyObject, Injectable {
     var view: DrawerView? { get set }
     var drawing: Drawing? { get set }
     var pencils: [Drawable] { get set }
@@ -17,7 +17,7 @@ protocol DrawerPresenterInput: AnyObject, Injectable {
     func finishDrawing()
 }
 
-class DrawerPresenter: DrawerPresenterInput {
+class DrawerPresenter: DrawerPresenterService {
     weak var view: DrawerView?
     var drawing: Drawing?
     var pencils: [Drawable]
@@ -28,7 +28,6 @@ class DrawerPresenter: DrawerPresenterInput {
         self.drawing = drawing
         self.pencils = pencils
         self.scheduler = scheduler
-        self.scheduler.delegate = self
     }
 
     func startDrawing(position: CGPoint, timeStamp: TimeInterval, pencilIndex: Int) {

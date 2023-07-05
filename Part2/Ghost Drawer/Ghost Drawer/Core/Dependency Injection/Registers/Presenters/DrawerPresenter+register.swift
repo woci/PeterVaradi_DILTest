@@ -9,11 +9,13 @@ import Foundation
 
 extension DrawerPresenter {
     static func register() {
-        SwinjectContainer.shared.container.register(DrawerPresenterInput.self,
+        SwinjectContainer.shared.container.register(DrawerPresenterService.self,
                                                     name: DrawerPresenter.registeredName) { r, pencils in
-            return DrawerPresenter(pencils: pencils,
+            let presenter = DrawerPresenter(pencils: pencils,
                                    scheduler: r.resolve(SchedulerService.self,
                                                         name: Scheduler.registeredName)!)
-        }
+            presenter.scheduler.delegate = presenter
+            return presenter
+        }.implements(SchedulerDelegate.self)
     }
 }

@@ -17,10 +17,29 @@
 		633856792A4DCAF600436A59 /* Ghost_DrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856782A4DCAF600436A59 /* Ghost_DrawerTests.swift */; };
 		633856832A4DCAF600436A59 /* Ghost_DrawerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856822A4DCAF600436A59 /* Ghost_DrawerUITests.swift */; };
 		633856852A4DCAF600436A59 /* Ghost_DrawerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856842A4DCAF600436A59 /* Ghost_DrawerUITestsLaunchTests.swift */; };
-		633856932A4DCC4C00436A59 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856922A4DCC4C00436A59 /* Renderer.swift */; };
 		633856962A4DD0FF00436A59 /* Pencil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856952A4DD0FF00436A59 /* Pencil.swift */; };
 		633856982A4DD6CD00436A59 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856972A4DD6CD00436A59 /* Drawing.swift */; };
 		6338569A2A4DD81000436A59 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856992A4DD81000436A59 /* Point.swift */; };
+		638B4ED12A557FB400EBBE5D /* UIViewController+storyboardIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4ED02A557FB400EBBE5D /* UIViewController+storyboardIdentifier.swift */; };
+		638B4F102A55822E00EBBE5D /* SchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4F0F2A55822E00EBBE5D /* SchedulerTests.swift */; };
+		638B4F112A558E4F00EBBE5D /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856972A4DD6CD00436A59 /* Drawing.swift */; };
+		638B4F122A558E5200EBBE5D /* Pencil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856952A4DD0FF00436A59 /* Pencil.swift */; };
+		638B4F132A558E5400EBBE5D /* ScheduledPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0792A54277A00F0870C /* ScheduledPoint.swift */; };
+		638B4F142A558E5700EBBE5D /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856992A4DD81000436A59 /* Point.swift */; };
+		638B4F152A558E5900EBBE5D /* SchedulerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D07F2A542C2000F0870C /* SchedulerService.swift */; };
+		638B4F162A558E5C00EBBE5D /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D07D2A542C0200F0870C /* TimerService.swift */; };
+		638B4F182A558E6400EBBE5D /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A026882A4E9C0F007161A8 /* Scheduler.swift */; };
+		638B4F192A5590E100EBBE5D /* SwinjectContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0752A54129B00F0870C /* SwinjectContainer.swift */; };
+		638B4F1A2A5590E400EBBE5D /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0732A54128200F0870C /* Injectable.swift */; };
+		638B4F1C2A559BE000EBBE5D /* ProxyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D07B2A542BEC00F0870C /* ProxyTimer.swift */; };
+		638B4F1D2A559C1900EBBE5D /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856652A4DCAF200436A59 /* DrawerViewController.swift */; };
+		638B4F1E2A559C1C00EBBE5D /* DrawerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A026862A4E9470007161A8 /* DrawerPresenter.swift */; };
+		638B4F1F2A559C2D00EBBE5D /* ProxyTimer+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0842A543A7300F0870C /* ProxyTimer+register.swift */; };
+		638B4F202A559C3000EBBE5D /* Scheduler+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0822A54399600F0870C /* Scheduler+register.swift */; };
+		638B4F212A559C3300EBBE5D /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D08B2A54466F00F0870C /* DrawViewController.swift */; };
+		638B4F222A559C3500EBBE5D /* DrawerPresenter+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0862A543E9400F0870C /* DrawerPresenter+register.swift */; };
+		638B4F232A559C4500EBBE5D /* UIViewController+storyboardIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4ED02A557FB400EBBE5D /* UIViewController+storyboardIdentifier.swift */; };
+		638B4F292A55B18400EBBE5D /* DrawerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4F282A55B18400EBBE5D /* DrawerPresenterTests.swift */; };
 		63A026872A4E9470007161A8 /* DrawerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A026862A4E9470007161A8 /* DrawerPresenter.swift */; };
 		63A026892A4E9C0F007161A8 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A026882A4E9C0F007161A8 /* Scheduler.swift */; };
 		63E4D0742A54128200F0870C /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0732A54128200F0870C /* Injectable.swift */; };
@@ -33,8 +52,6 @@
 		63E4D0852A543A7300F0870C /* ProxyTimer+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0842A543A7300F0870C /* ProxyTimer+register.swift */; };
 		63E4D0872A543E9400F0870C /* DrawerPresenter+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0862A543E9400F0870C /* DrawerPresenter+register.swift */; };
 		63E4D08C2A54466F00F0870C /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D08B2A54466F00F0870C /* DrawViewController.swift */; };
-		63E4D08E2A544A4600F0870C /* RendererService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D08D2A544A4600F0870C /* RendererService.swift */; };
-		63E4D0902A544AC600F0870C /* Renderer+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D08F2A544AC600F0870C /* Renderer+register.swift */; };
 		7B31375F97099F7D28887E9B /* libPods-Ghost DrawerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9746403AE315F540F1C9CF20 /* libPods-Ghost DrawerTests.a */; };
 		AB0F261CC0C530DC336B1190 /* libPods-Ghost Drawer-Ghost DrawerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEF857B9360F788426FC85E /* libPods-Ghost Drawer-Ghost DrawerUITests.a */; };
 /* End PBXBuildFile section */
@@ -73,10 +90,12 @@
 		6338567E2A4DCAF600436A59 /* Ghost DrawerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ghost DrawerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		633856822A4DCAF600436A59 /* Ghost_DrawerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghost_DrawerUITests.swift; sourceTree = "<group>"; };
 		633856842A4DCAF600436A59 /* Ghost_DrawerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghost_DrawerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		633856922A4DCC4C00436A59 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		633856952A4DD0FF00436A59 /* Pencil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pencil.swift; sourceTree = "<group>"; };
 		633856972A4DD6CD00436A59 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		633856992A4DD81000436A59 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		638B4ED02A557FB400EBBE5D /* UIViewController+storyboardIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+storyboardIdentifier.swift"; sourceTree = "<group>"; };
+		638B4F0F2A55822E00EBBE5D /* SchedulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerTests.swift; sourceTree = "<group>"; };
+		638B4F282A55B18400EBBE5D /* DrawerPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerPresenterTests.swift; sourceTree = "<group>"; };
 		63A026862A4E9470007161A8 /* DrawerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerPresenter.swift; sourceTree = "<group>"; };
 		63A026882A4E9C0F007161A8 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
 		63E4D0732A54128200F0870C /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
@@ -89,8 +108,6 @@
 		63E4D0842A543A7300F0870C /* ProxyTimer+register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProxyTimer+register.swift"; sourceTree = "<group>"; };
 		63E4D0862A543E9400F0870C /* DrawerPresenter+register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrawerPresenter+register.swift"; sourceTree = "<group>"; };
 		63E4D08B2A54466F00F0870C /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
-		63E4D08D2A544A4600F0870C /* RendererService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererService.swift; sourceTree = "<group>"; };
-		63E4D08F2A544AC600F0870C /* Renderer+register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Renderer+register.swift"; sourceTree = "<group>"; };
 		6ADDD4AA1377590864E3215D /* Pods-Ghost DrawerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ghost DrawerTests.debug.xcconfig"; path = "Target Support Files/Pods-Ghost DrawerTests/Pods-Ghost DrawerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		95A11BBD4D292D879A29550C /* Pods-Ghost Drawer-Ghost DrawerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ghost Drawer-Ghost DrawerUITests.release.xcconfig"; path = "Target Support Files/Pods-Ghost Drawer-Ghost DrawerUITests/Pods-Ghost Drawer-Ghost DrawerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9746403AE315F540F1C9CF20 /* libPods-Ghost DrawerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ghost DrawerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +199,8 @@
 		633856772A4DCAF600436A59 /* Ghost DrawerTests */ = {
 			isa = PBXGroup;
 			children = (
+				638B4F282A55B18400EBBE5D /* DrawerPresenterTests.swift */,
+				638B4F0F2A55822E00EBBE5D /* SchedulerTests.swift */,
 				633856782A4DCAF600436A59 /* Ghost_DrawerTests.swift */,
 			);
 			path = "Ghost DrawerTests";
@@ -207,6 +226,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		638B4ED22A557FC100EBBE5D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				638B4ED02A557FB400EBBE5D /* UIViewController+storyboardIdentifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		63A026852A4E9453007161A8 /* Module */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				63E4D0722A54126800F0870C /* Dependency Injection */,
+				638B4ED22A557FC100EBBE5D /* Extensions */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -250,7 +278,6 @@
 				63E4D0812A5432E100F0870C /* ConcreteServices */,
 				63E4D07D2A542C0200F0870C /* TimerService.swift */,
 				63E4D07F2A542C2000F0870C /* SchedulerService.swift */,
-				63E4D08D2A544A4600F0870C /* RendererService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -258,7 +285,6 @@
 		63E4D0812A5432E100F0870C /* ConcreteServices */ = {
 			isa = PBXGroup;
 			children = (
-				633856922A4DCC4C00436A59 /* Renderer.swift */,
 				63E4D07B2A542BEC00F0870C /* ProxyTimer.swift */,
 				63A026882A4E9C0F007161A8 /* Scheduler.swift */,
 			);
@@ -270,7 +296,6 @@
 			children = (
 				63E4D0822A54399600F0870C /* Scheduler+register.swift */,
 				63E4D0842A543A7300F0870C /* ProxyTimer+register.swift */,
-				63E4D08F2A544AC600F0870C /* Renderer+register.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -505,10 +530,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				63A026892A4E9C0F007161A8 /* Scheduler.swift in Sources */,
-				633856932A4DCC4C00436A59 /* Renderer.swift in Sources */,
 				63E4D08C2A54466F00F0870C /* DrawViewController.swift in Sources */,
 				63E4D07A2A54277A00F0870C /* ScheduledPoint.swift in Sources */,
-				63E4D08E2A544A4600F0870C /* RendererService.swift in Sources */,
 				633856662A4DCAF200436A59 /* DrawerViewController.swift in Sources */,
 				633856982A4DD6CD00436A59 /* Drawing.swift in Sources */,
 				633856622A4DCAF200436A59 /* AppDelegate.swift in Sources */,
@@ -516,10 +539,10 @@
 				6338569A2A4DD81000436A59 /* Point.swift in Sources */,
 				63E4D0872A543E9400F0870C /* DrawerPresenter+register.swift in Sources */,
 				63E4D0832A54399600F0870C /* Scheduler+register.swift in Sources */,
-				63E4D0902A544AC600F0870C /* Renderer+register.swift in Sources */,
 				63E4D0852A543A7300F0870C /* ProxyTimer+register.swift in Sources */,
 				63A026872A4E9470007161A8 /* DrawerPresenter.swift in Sources */,
 				63E4D0802A542C2000F0870C /* SchedulerService.swift in Sources */,
+				638B4ED12A557FB400EBBE5D /* UIViewController+storyboardIdentifier.swift in Sources */,
 				633856962A4DD0FF00436A59 /* Pencil.swift in Sources */,
 				63E4D0742A54128200F0870C /* Injectable.swift in Sources */,
 				63E4D07C2A542BEC00F0870C /* ProxyTimer.swift in Sources */,
@@ -532,7 +555,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638B4F1A2A5590E400EBBE5D /* Injectable.swift in Sources */,
+				638B4F182A558E6400EBBE5D /* Scheduler.swift in Sources */,
+				638B4F202A559C3000EBBE5D /* Scheduler+register.swift in Sources */,
 				633856792A4DCAF600436A59 /* Ghost_DrawerTests.swift in Sources */,
+				638B4F212A559C3300EBBE5D /* DrawViewController.swift in Sources */,
+				638B4F102A55822E00EBBE5D /* SchedulerTests.swift in Sources */,
+				638B4F142A558E5700EBBE5D /* Point.swift in Sources */,
+				638B4F192A5590E100EBBE5D /* SwinjectContainer.swift in Sources */,
+				638B4F222A559C3500EBBE5D /* DrawerPresenter+register.swift in Sources */,
+				638B4F232A559C4500EBBE5D /* UIViewController+storyboardIdentifier.swift in Sources */,
+				638B4F1F2A559C2D00EBBE5D /* ProxyTimer+register.swift in Sources */,
+				638B4F1D2A559C1900EBBE5D /* DrawerViewController.swift in Sources */,
+				638B4F1E2A559C1C00EBBE5D /* DrawerPresenter.swift in Sources */,
+				638B4F292A55B18400EBBE5D /* DrawerPresenterTests.swift in Sources */,
+				638B4F132A558E5400EBBE5D /* ScheduledPoint.swift in Sources */,
+				638B4F122A558E5200EBBE5D /* Pencil.swift in Sources */,
+				638B4F152A558E5900EBBE5D /* SchedulerService.swift in Sources */,
+				638B4F112A558E4F00EBBE5D /* Drawing.swift in Sources */,
+				638B4F1C2A559BE000EBBE5D /* ProxyTimer.swift in Sources */,
+				638B4F162A558E5C00EBBE5D /* TimerService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

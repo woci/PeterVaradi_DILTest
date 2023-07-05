@@ -16,8 +16,11 @@ class DrawerViewController: UIViewController, DrawerView {
 
     @IBOutlet weak var canvas: UIView!
     @IBOutlet weak var pencilSelector: UISegmentedControl!
-    var renderer: RendererService!
-    var presenter: DrawerPresenterInput!
+    var presenter: DrawerPresenterService!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {
@@ -40,7 +43,26 @@ class DrawerViewController: UIViewController, DrawerView {
 
 extension DrawerViewController {
     func render(scheduledPoint: ScheduledPoint) {
-        renderer.render(scheduledPoint: scheduledPoint)
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.lineCap = .round
+        shapeLayer.lineWidth = 20
+        shapeLayer.strokeColor = scheduledPoint.color.cgColor
+
+        let path = UIBezierPath()
+        path.move(to: scheduledPoint.from)
+        path.addLine(to: scheduledPoint.to)
+        shapeLayer.path = path.cgPath
+
+        let animation = CABasicAnimation(keyPath: "opacity")
+        animation.duration = scheduledPoint.renderInterval
+        animation.fromValue = 0.0
+        animation.toValue = 1.0
+        animation.isRemovedOnCompletion = false
+        animation.fillMode = .both
+        animation.isAdditive = false
+
+        shapeLayer.add(animation, forKey: "fadeIn")
+        self.canvas.layer.addSublayer(shapeLayer)
     }
 }
 
@@ -53,11 +75,5 @@ extension DrawerViewController {
             as! DrawerViewController
 
         return viewController
-    }
-}
-
-extension UIViewController {
-    static var storyBoardIdentifier: String {
-        String(describing: self) + "StoryboardIdentifer"
     }
 }

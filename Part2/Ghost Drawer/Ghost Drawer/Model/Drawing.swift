@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Drawing {
     var points: [Point]
     var pencil: Drawable

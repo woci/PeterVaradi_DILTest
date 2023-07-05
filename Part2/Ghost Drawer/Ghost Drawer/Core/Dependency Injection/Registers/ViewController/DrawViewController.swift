@@ -11,13 +11,10 @@ import SwinjectStoryboard
 extension DrawerViewController: Injectable {
     static func register() {
         SwinjectContainer.shared.container.storyboardInitCompleted(DrawerViewController.self) { r, c in
-            c.presenter = r.resolve(DrawerPresenterInput.self,
+            c.presenter = r.resolve(DrawerPresenterService.self,
                                     name: DrawerPresenter.registeredName,
                                     argument: DrawerViewController.pencils)
             c.presenter.view = c
-            c.renderer = r.resolve(RendererService.self,
-                                   name: Renderer.registeredName,
-                                   argument: c.canvas)
         }
     }
 

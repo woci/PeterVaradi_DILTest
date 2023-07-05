@@ -7,8 +7,11 @@
 
 import Foundation
 
-struct ProxyTimer: TimerService {
-    func scheduledTimer(withTimeInterval: TimeInterval, repeats: Bool, block: @escaping (Timer) -> Void) -> Timer {
-        Timer.scheduledTimer(withTimeInterval: withTimeInterval, repeats: repeats, block: block)
+final class ProxyTimer: TimerService {
+    func scheduledTimer(withTimeInterval: TimeInterval, repeats: Bool, block: @escaping @Sendable (TimerService) -> Void) -> TimerService {
+        Timer.scheduledTimer(withTimeInterval: withTimeInterval, repeats: repeats) { timer in
+            block(self)
+        }
+        return self
     }
 }

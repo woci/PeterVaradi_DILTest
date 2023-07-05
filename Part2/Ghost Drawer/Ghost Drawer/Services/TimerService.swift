@@ -8,5 +8,5 @@
 import Foundation
 
 protocol TimerService: Injectable {
-    func scheduledTimer(withTimeInterval: TimeInterval, repeats: Bool, block: @escaping @Sendable (Timer) -> Void) -> Timer
+    func scheduledTimer(withTimeInterval: TimeInterval, repeats: Bool, block: @escaping @Sendable (TimerService) -> Void) -> TimerService
 }
