@@ -24,7 +24,7 @@
 		638B4F102A55822E00EBBE5D /* SchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4F0F2A55822E00EBBE5D /* SchedulerTests.swift */; };
 		638B4F112A558E4F00EBBE5D /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856972A4DD6CD00436A59 /* Drawing.swift */; };
 		638B4F122A558E5200EBBE5D /* Pencil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856952A4DD0FF00436A59 /* Pencil.swift */; };
-		638B4F132A558E5400EBBE5D /* ScheduledPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0792A54277A00F0870C /* ScheduledPoint.swift */; };
+		638B4F132A558E5400EBBE5D /* ScheduledPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0792A54277A00F0870C /* ScheduledPath.swift */; };
 		638B4F142A558E5700EBBE5D /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856992A4DD81000436A59 /* Point.swift */; };
 		638B4F152A558E5900EBBE5D /* SchedulerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D07F2A542C2000F0870C /* SchedulerService.swift */; };
 		638B4F162A558E5C00EBBE5D /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D07D2A542C0200F0870C /* TimerService.swift */; };
@@ -44,7 +44,7 @@
 		63A026892A4E9C0F007161A8 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A026882A4E9C0F007161A8 /* Scheduler.swift */; };
 		63E4D0742A54128200F0870C /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0732A54128200F0870C /* Injectable.swift */; };
 		63E4D0762A54129B00F0870C /* SwinjectContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0752A54129B00F0870C /* SwinjectContainer.swift */; };
-		63E4D07A2A54277A00F0870C /* ScheduledPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0792A54277A00F0870C /* ScheduledPoint.swift */; };
+		63E4D07A2A54277A00F0870C /* ScheduledPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0792A54277A00F0870C /* ScheduledPath.swift */; };
 		63E4D07C2A542BEC00F0870C /* ProxyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D07B2A542BEC00F0870C /* ProxyTimer.swift */; };
 		63E4D07E2A542C0200F0870C /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D07D2A542C0200F0870C /* TimerService.swift */; };
 		63E4D0802A542C2000F0870C /* SchedulerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D07F2A542C2000F0870C /* SchedulerService.swift */; };
@@ -100,7 +100,7 @@
 		63A026882A4E9C0F007161A8 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
 		63E4D0732A54128200F0870C /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		63E4D0752A54129B00F0870C /* SwinjectContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectContainer.swift; sourceTree = "<group>"; };
-		63E4D0792A54277A00F0870C /* ScheduledPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledPoint.swift; sourceTree = "<group>"; };
+		63E4D0792A54277A00F0870C /* ScheduledPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledPath.swift; sourceTree = "<group>"; };
 		63E4D07B2A542BEC00F0870C /* ProxyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyTimer.swift; sourceTree = "<group>"; };
 		63E4D07D2A542C0200F0870C /* TimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerService.swift; sourceTree = "<group>"; };
 		63E4D07F2A542C2000F0870C /* SchedulerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerService.swift; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 				633856952A4DD0FF00436A59 /* Pencil.swift */,
 				633856972A4DD6CD00436A59 /* Drawing.swift */,
 				633856992A4DD81000436A59 /* Point.swift */,
-				63E4D0792A54277A00F0870C /* ScheduledPoint.swift */,
+				63E4D0792A54277A00F0870C /* ScheduledPath.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -531,7 +531,7 @@
 			files = (
 				63A026892A4E9C0F007161A8 /* Scheduler.swift in Sources */,
 				63E4D08C2A54466F00F0870C /* DrawViewController.swift in Sources */,
-				63E4D07A2A54277A00F0870C /* ScheduledPoint.swift in Sources */,
+				63E4D07A2A54277A00F0870C /* ScheduledPath.swift in Sources */,
 				633856662A4DCAF200436A59 /* DrawerViewController.swift in Sources */,
 				633856982A4DD6CD00436A59 /* Drawing.swift in Sources */,
 				633856622A4DCAF200436A59 /* AppDelegate.swift in Sources */,
@@ -569,7 +569,7 @@
 				638B4F1D2A559C1900EBBE5D /* DrawerViewController.swift in Sources */,
 				638B4F1E2A559C1C00EBBE5D /* DrawerPresenter.swift in Sources */,
 				638B4F292A55B18400EBBE5D /* DrawerPresenterTests.swift in Sources */,
-				638B4F132A558E5400EBBE5D /* ScheduledPoint.swift in Sources */,
+				638B4F132A558E5400EBBE5D /* ScheduledPath.swift in Sources */,
 				638B4F122A558E5200EBBE5D /* Pencil.swift in Sources */,
 				638B4F152A558E5900EBBE5D /* SchedulerService.swift in Sources */,
 				638B4F112A558E4F00EBBE5D /* Drawing.swift in Sources */,

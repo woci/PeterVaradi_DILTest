@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct ScheduledPoint {
+struct ScheduledPath {
     var from: CGPoint
     var to: CGPoint
     var color: UIColor
