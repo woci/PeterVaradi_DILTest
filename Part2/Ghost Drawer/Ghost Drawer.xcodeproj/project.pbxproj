@@ -41,6 +41,7 @@
 		63A287B02A56D6040024A346 /* DrawerPresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A287A82A56CDC10024A346 /* DrawerPresenterService.swift */; };
 		63A287B22A56D70B0024A346 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A287B12A56D70B0024A346 /* DrawerView.swift */; };
 		63A287B32A56D71A0024A346 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A287B12A56D70B0024A346 /* DrawerView.swift */; };
+		63A287B52A56DE550024A346 /* Ghost Drawer.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 63A287B42A56DE550024A346 /* Ghost Drawer.xctestplan */; };
 		63E4D0742A54128200F0870C /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0732A54128200F0870C /* Injectable.swift */; };
 		63E4D0762A54129B00F0870C /* SwinjectContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0752A54129B00F0870C /* SwinjectContainer.swift */; };
 		63E4D07A2A54277A00F0870C /* ScheduledPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0792A54277A00F0870C /* ScheduledPath.swift */; };
@@ -100,6 +101,7 @@
 		63A287AA2A56D31B0024A346 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 		63A287AE2A56D5E30024A346 /* SwinjectContainer+register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectContainer+register.swift"; sourceTree = "<group>"; };
 		63A287B12A56D70B0024A346 /* DrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
+		63A287B42A56DE550024A346 /* Ghost Drawer.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Ghost Drawer.xctestplan"; sourceTree = "<group>"; };
 		63E4D0732A54128200F0870C /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		63E4D0752A54129B00F0870C /* SwinjectContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectContainer.swift; sourceTree = "<group>"; };
 		63E4D0792A54277A00F0870C /* ScheduledPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledPath.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		633856552A4DCAF200436A59 = {
 			isa = PBXGroup;
 			children = (
+				63A287B42A56DE550024A346 /* Ghost Drawer.xctestplan */,
 				633856602A4DCAF200436A59 /* Ghost Drawer */,
 				633856772A4DCAF600436A59 /* Ghost DrawerTests */,
 				633856812A4DCAF600436A59 /* Ghost DrawerUITests */,
@@ -447,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6338566E2A4DCAF500436A59 /* LaunchScreen.storyboard in Resources */,
+				63A287B52A56DE550024A346 /* Ghost Drawer.xctestplan in Resources */,
 				6338566B2A4DCAF500436A59 /* Assets.xcassets in Resources */,
 				633856692A4DCAF200436A59 /* Main.storyboard in Resources */,
 			);
