@@ -12,8 +12,8 @@ extension DrawerPresenter {
         SwinjectContainer.shared.container.register(DrawerPresenterService.self,
                                                     name: DrawerPresenter.registeredName) { r, pencils in
             let presenter = DrawerPresenter(pencils: pencils,
-                                   scheduler: r.resolve(SchedulerService.self,
-                                                        name: Scheduler.registeredName)!)
+                                            scheduler: r.resolve(SchedulerService.self,
+                                                                 name: Scheduler.registeredName)!)
             presenter.scheduler.delegate = presenter
             return presenter
         }.implements(SchedulerDelegate.self)

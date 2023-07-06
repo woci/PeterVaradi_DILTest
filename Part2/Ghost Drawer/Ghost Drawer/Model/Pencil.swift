@@ -18,8 +18,8 @@ protocol Drawer {
 
 extension Drawer where Self: Equatable {
     func isEqualTo(_ other: Drawer) -> Bool {
-        guard let otherX = other as? Self else { return false }
-        return self == otherX
+        guard let otherDrawer = other as? Self else { return false }
+        return self == otherDrawer
     }
     func asEquatable() -> AnyEquatableDrawer {
         return AnyEquatableDrawer(self)

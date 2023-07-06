@@ -8,10 +8,6 @@
 import UIKit
 import SwinjectStoryboard
 
-protocol DrawerView: AnyObject {
-    func render(scheduledPath: ScheduledPath)
-}
-
 class DrawerViewController: UIViewController, DrawerView {
 
     @IBOutlet weak var canvas: UIView!

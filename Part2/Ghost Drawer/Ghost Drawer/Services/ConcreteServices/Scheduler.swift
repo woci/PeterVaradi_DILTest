@@ -22,7 +22,7 @@ final class Scheduler: SchedulerService {
                            |     R    |
      Blue-3
      0----1----2----3----4----5----6----7----8----9----10----11----12----13
-                     |      B    |
+                        |      B    |
      Green-5
      0----1----2----3----4----5----6----7----8----9----10----11----12----13
                            |   G      |
@@ -52,17 +52,11 @@ final class Scheduler: SchedulerService {
         }
 
         var timerToFire = drawing.pencil.delay
-
         for index in 0..<drawing.points.count {
             if index < drawing.points.count - 1 {
                 let fromPoint = drawing.points[index]
                 let toPoint = drawing.points[index + 1]
-                let renderInterval = calculateRenderInterval(to: toPoint.timestamp,
-                                                             from: fromPoint.timestamp)
-                timerToFire = calculateTimerToFireInterval(renderInterval: renderInterval,
-                                                           previousTimerToFireInterval: timerToFire)
-
-
+                let renderInterval = toPoint.timestamp - fromPoint.timestamp
 
                 let scheduledPath = ScheduledPath(from: fromPoint.position,
                                                     to: toPoint.position,
@@ -70,17 +64,10 @@ final class Scheduler: SchedulerService {
                                                     renderInterval: renderInterval)
 
                 schedule(timerToFire: timerToFire, scheduledPath: scheduledPath)
+
+                timerToFire += renderInterval
             }
         }
-    }
-
-
-    private func calculateRenderInterval(to: TimeInterval, from: TimeInterval) -> TimeInterval {
-        to - from
-    }
-
-    private func calculateTimerToFireInterval(renderInterval: TimeInterval, previousTimerToFireInterval: TimeInterval) -> TimeInterval {
-        renderInterval + previousTimerToFireInterval
     }
 
     private func schedule(timerToFire: TimeInterval, scheduledPath: ScheduledPath) {

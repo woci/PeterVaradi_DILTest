@@ -31,16 +31,16 @@
 		638B4F192A5590E100EBBE5D /* SwinjectContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0752A54129B00F0870C /* SwinjectContainer.swift */; };
 		638B4F1A2A5590E400EBBE5D /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0732A54128200F0870C /* Injectable.swift */; };
 		638B4F1C2A559BE000EBBE5D /* ProxyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D07B2A542BEC00F0870C /* ProxyTimer.swift */; };
-		638B4F1D2A559C1900EBBE5D /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633856652A4DCAF200436A59 /* DrawerViewController.swift */; };
 		638B4F1E2A559C1C00EBBE5D /* DrawerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A026862A4E9470007161A8 /* DrawerPresenter.swift */; };
-		638B4F1F2A559C2D00EBBE5D /* ProxyTimer+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0842A543A7300F0870C /* ProxyTimer+register.swift */; };
-		638B4F202A559C3000EBBE5D /* Scheduler+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0822A54399600F0870C /* Scheduler+register.swift */; };
-		638B4F212A559C3300EBBE5D /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D08B2A54466F00F0870C /* DrawViewController.swift */; };
-		638B4F222A559C3500EBBE5D /* DrawerPresenter+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0862A543E9400F0870C /* DrawerPresenter+register.swift */; };
-		638B4F232A559C4500EBBE5D /* UIViewController+storyboardIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4ED02A557FB400EBBE5D /* UIViewController+storyboardIdentifier.swift */; };
 		638B4F292A55B18400EBBE5D /* DrawerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4F282A55B18400EBBE5D /* DrawerPresenterTests.swift */; };
 		63A026872A4E9470007161A8 /* DrawerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A026862A4E9470007161A8 /* DrawerPresenter.swift */; };
 		63A026892A4E9C0F007161A8 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A026882A4E9C0F007161A8 /* Scheduler.swift */; };
+		63A287A92A56CDC10024A346 /* DrawerPresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A287A82A56CDC10024A346 /* DrawerPresenterService.swift */; };
+		63A287AB2A56D31B0024A346 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A287AA2A56D31B0024A346 /* Configurations.swift */; };
+		63A287AF2A56D5E30024A346 /* SwinjectContainer+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A287AE2A56D5E30024A346 /* SwinjectContainer+register.swift */; };
+		63A287B02A56D6040024A346 /* DrawerPresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A287A82A56CDC10024A346 /* DrawerPresenterService.swift */; };
+		63A287B22A56D70B0024A346 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A287B12A56D70B0024A346 /* DrawerView.swift */; };
+		63A287B32A56D71A0024A346 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A287B12A56D70B0024A346 /* DrawerView.swift */; };
 		63E4D0742A54128200F0870C /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0732A54128200F0870C /* Injectable.swift */; };
 		63E4D0762A54129B00F0870C /* SwinjectContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0752A54129B00F0870C /* SwinjectContainer.swift */; };
 		63E4D07A2A54277A00F0870C /* ScheduledPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D0792A54277A00F0870C /* ScheduledPath.swift */; };
@@ -96,6 +96,10 @@
 		638B4F282A55B18400EBBE5D /* DrawerPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerPresenterTests.swift; sourceTree = "<group>"; };
 		63A026862A4E9470007161A8 /* DrawerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerPresenter.swift; sourceTree = "<group>"; };
 		63A026882A4E9C0F007161A8 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		63A287A82A56CDC10024A346 /* DrawerPresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerPresenterService.swift; sourceTree = "<group>"; };
+		63A287AA2A56D31B0024A346 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
+		63A287AE2A56D5E30024A346 /* SwinjectContainer+register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectContainer+register.swift"; sourceTree = "<group>"; };
+		63A287B12A56D70B0024A346 /* DrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
 		63E4D0732A54128200F0870C /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		63E4D0752A54129B00F0870C /* SwinjectContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectContainer.swift; sourceTree = "<group>"; };
 		63E4D0792A54277A00F0870C /* ScheduledPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledPath.swift; sourceTree = "<group>"; };
@@ -181,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				63E4D0712A54125F00F0870C /* Core */,
+				63A287AC2A56D3250024A346 /* Configurations */,
 				63E4D0782A54275C00F0870C /* Services */,
 				633856942A4DD0EA00436A59 /* Model */,
 				63A026852A4E9453007161A8 /* Module */,
@@ -236,8 +241,18 @@
 			children = (
 				633856652A4DCAF200436A59 /* DrawerViewController.swift */,
 				63A026862A4E9470007161A8 /* DrawerPresenter.swift */,
+				63A287A82A56CDC10024A346 /* DrawerPresenterService.swift */,
+				63A287B12A56D70B0024A346 /* DrawerView.swift */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		63A287AC2A56D3250024A346 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				63A287AA2A56D31B0024A346 /* Configurations.swift */,
+			);
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 		63E4D0712A54125F00F0870C /* Core */ = {
@@ -255,6 +270,7 @@
 				63E4D0772A5415FC00F0870C /* Registers */,
 				63E4D0732A54128200F0870C /* Injectable.swift */,
 				63E4D0752A54129B00F0870C /* SwinjectContainer.swift */,
+				63A287AE2A56D5E30024A346 /* SwinjectContainer+register.swift */,
 			);
 			path = "Dependency Injection";
 			sourceTree = "<group>";
@@ -528,6 +544,7 @@
 			files = (
 				63A026892A4E9C0F007161A8 /* Scheduler.swift in Sources */,
 				63E4D08C2A54466F00F0870C /* DrawViewController.swift in Sources */,
+				63A287AF2A56D5E30024A346 /* SwinjectContainer+register.swift in Sources */,
 				63E4D07A2A54277A00F0870C /* ScheduledPath.swift in Sources */,
 				633856662A4DCAF200436A59 /* DrawerViewController.swift in Sources */,
 				633856982A4DD6CD00436A59 /* Drawing.swift in Sources */,
@@ -539,10 +556,13 @@
 				63E4D0852A543A7300F0870C /* ProxyTimer+register.swift in Sources */,
 				63A026872A4E9470007161A8 /* DrawerPresenter.swift in Sources */,
 				63E4D0802A542C2000F0870C /* SchedulerService.swift in Sources */,
+				63A287B22A56D70B0024A346 /* DrawerView.swift in Sources */,
 				638B4ED12A557FB400EBBE5D /* UIViewController+storyboardIdentifier.swift in Sources */,
+				63A287AB2A56D31B0024A346 /* Configurations.swift in Sources */,
 				633856962A4DD0FF00436A59 /* Pencil.swift in Sources */,
 				63E4D0742A54128200F0870C /* Injectable.swift in Sources */,
 				63E4D07C2A542BEC00F0870C /* ProxyTimer.swift in Sources */,
+				63A287A92A56CDC10024A346 /* DrawerPresenterService.swift in Sources */,
 				633856642A4DCAF200436A59 /* SceneDelegate.swift in Sources */,
 				63E4D07E2A542C0200F0870C /* TimerService.swift in Sources */,
 			);
@@ -554,21 +574,17 @@
 			files = (
 				638B4F1A2A5590E400EBBE5D /* Injectable.swift in Sources */,
 				638B4F182A558E6400EBBE5D /* Scheduler.swift in Sources */,
-				638B4F202A559C3000EBBE5D /* Scheduler+register.swift in Sources */,
-				638B4F212A559C3300EBBE5D /* DrawViewController.swift in Sources */,
 				638B4F102A55822E00EBBE5D /* SchedulerTests.swift in Sources */,
 				638B4F142A558E5700EBBE5D /* Point.swift in Sources */,
 				638B4F192A5590E100EBBE5D /* SwinjectContainer.swift in Sources */,
-				638B4F222A559C3500EBBE5D /* DrawerPresenter+register.swift in Sources */,
-				638B4F232A559C4500EBBE5D /* UIViewController+storyboardIdentifier.swift in Sources */,
-				638B4F1F2A559C2D00EBBE5D /* ProxyTimer+register.swift in Sources */,
-				638B4F1D2A559C1900EBBE5D /* DrawerViewController.swift in Sources */,
 				638B4F1E2A559C1C00EBBE5D /* DrawerPresenter.swift in Sources */,
 				638B4F292A55B18400EBBE5D /* DrawerPresenterTests.swift in Sources */,
 				638B4F132A558E5400EBBE5D /* ScheduledPath.swift in Sources */,
 				638B4F122A558E5200EBBE5D /* Pencil.swift in Sources */,
 				638B4F152A558E5900EBBE5D /* SchedulerService.swift in Sources */,
+				63A287B02A56D6040024A346 /* DrawerPresenterService.swift in Sources */,
 				638B4F112A558E4F00EBBE5D /* Drawing.swift in Sources */,
+				63A287B32A56D71A0024A346 /* DrawerView.swift in Sources */,
 				638B4F1C2A559BE000EBBE5D /* ProxyTimer.swift in Sources */,
 				638B4F162A558E5C00EBBE5D /* TimerService.swift in Sources */,
 			);
