@@ -8,7 +8,25 @@
 import XCTest
 
 final class DrawerPresenterTests: XCTestCase {
-    func testStartDrawing_DrawingExists() {
+    func testStartDrawing_drawingExists_newDrawingCreated() {
+        let scheduler = MockScheduler()
+        let pencilBlack = Pencil(color: .black, delay: 0)
+        let presenter = DrawerPresenter(drawing: Drawing(points: [Point(position: .zero,timestamp: 0),
+                                                                  Point(position: CGPoint(x: 1, y: 1), timestamp: 1)],
+                                                         pencil: pencilBlack),
+                                        pencils: [pencilBlack],
+                                        scheduler: scheduler)
+        presenter.scheduler.delegate = presenter
+
+        let sut = TestView(presenter: presenter)
+
+        sut.presenter.startDrawing(position: .zero, timeStamp: 0, pencilIndex: 0)
+
+        XCTAssertNotNil(sut.presenter.drawing)
+        XCTAssert(sut.presenter.drawing! == Drawing(points: [Point(position: .zero, timestamp: 0)], pencil: pencilBlack))
+    }
+
+    func testStartDrawing_drawingDoesntExist_newDrawingCreated() {
         let scheduler = MockScheduler()
         let pencilBlack = Pencil(color: .black, delay: 0)
         let presenter = DrawerPresenter(pencils: [pencilBlack], scheduler: scheduler)
@@ -22,7 +40,7 @@ final class DrawerPresenterTests: XCTestCase {
         XCTAssert(sut.presenter.drawing! == Drawing(points: [Point(position: .zero, timestamp: 0)], pencil: pencilBlack))
     }
 
-    func testUpdateDrawing_DrawingExists() {
+    func testUpdateDrawing_drawingExists() {
         let scheduler = MockScheduler()
         let pencilBlack = Pencil(color: .black, delay: 0)
         let presenter = DrawerPresenter(drawing: Drawing(points: [Point(position: .zero, timestamp: 0)], pencil: pencilBlack), pencils: [pencilBlack], scheduler: scheduler)
@@ -37,7 +55,7 @@ final class DrawerPresenterTests: XCTestCase {
                                                     pencil: pencilBlack))
     }
 
-    func testUpdateDrawing_DrawingDoesntExists() {
+    func testUpdateDrawing_drawingDoesntExist() {
         let scheduler = MockScheduler()
         let pencilBlack = Pencil(color: .black, delay: 0)
         let presenter = DrawerPresenter(pencils: [pencilBlack], scheduler: scheduler)
@@ -49,7 +67,7 @@ final class DrawerPresenterTests: XCTestCase {
         XCTAssertNil(sut.presenter.drawing)
     }
 
-    func testFinishDrawing_DrawingExists() {
+    func testFinishDrawing_drawingExists() {
         let scheduler = MockScheduler()
         let pencilBlack = Pencil(color: .black, delay: 0)
         let presenter = DrawerPresenter(drawing: Drawing(points: [Point(position: .zero, timestamp: 0),
@@ -67,7 +85,7 @@ final class DrawerPresenterTests: XCTestCase {
         wait(for: [renderExpectation], timeout: 0.5)
     }
 
-    func testFinishDrawing_DrawingDoesntExists() {
+    func testFinishDrawing_drawingDoesntExist() {
         let scheduler = MockScheduler()
         let pencilBlack = Pencil(color: .black, delay: 0)
         let presenter = DrawerPresenter(pencils: [pencilBlack],
