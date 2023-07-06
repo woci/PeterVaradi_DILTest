@@ -9,7 +9,7 @@ import Foundation
 
 struct Configurations {
     static var pencils: [Drawer] = [Pencil(color: .red, delay: 1.0),
-                                            Pencil(color: .green, delay: 5.0),
-                                            Pencil(color: .blue, delay: 3.0),
-                                            Eraser(color: .white, delay: 2.0)]
+                                    Pencil(color: .green, delay: 5.0),
+                                    Pencil(color: .blue, delay: 3.0),
+                                    Eraser(color: .white, delay: 2.0)]
 }
