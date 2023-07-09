@@ -17,5 +17,6 @@ extension HTTPClient {
         endpoint: any Endpoint
     ) async -> Result<T, RequestError> {
         //TODO: elaborate it
+        return .failure(.decode)
     }
 }

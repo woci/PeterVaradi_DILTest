@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol PresenterInput {
+protocol SomePresenterInput {
     func fetchData()
     func showDetails(atIndex index: Int)
 }
 
-class Presenter: PresenterInput {
+class SomePresenter: SomePresenterInput {
     weak var view: SomeView?
     var service: DataService
     var data: [SomeModel]
@@ -24,13 +24,6 @@ class Presenter: PresenterInput {
     }
 
     func fetchData() {
-        //TODO: Please create a networking layer for fetching data, use async/await or a background dispatchqueue
-//        let url = URL(string: "testreq")!
-//        let task = URLSession.shared.dataTask(with: url) { [self](data, response, error) in
-//            self.dataArray = data as? [Any]
-//            self.collectionView.reloadData()
-//        }
-//        task.resume()
         Task {
             let result = await service.fetchData()
             switch result {
