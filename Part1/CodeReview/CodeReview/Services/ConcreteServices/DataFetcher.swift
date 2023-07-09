@@ -7,20 +7,6 @@
 
 import Foundation
 
-struct SomeModel: Decodable, Hashable {
-    let id: String
-    let prop1: String
-    let prop2: String
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(self.id)
-    }
-}
-
-protocol DataService {
-    func fetchData() async -> Result<[SomeModel], RequestError>
-}
-
 struct DataFetcher: DataService {
     var session: HTTPClient
 
@@ -28,4 +14,11 @@ struct DataFetcher: DataService {
         let request = DataRequest()
         return await session.sendRequest(endpoint: request)
     }
+}
+
+struct DataRequest: Endpoint {
+    var path: String = "/userProfile"
+    var method: RequestMethod = .get
+    var header: [String : String]?
+    var body: Codable?
 }

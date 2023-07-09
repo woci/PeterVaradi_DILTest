@@ -121,7 +121,7 @@ class SomeViewController: UIViewController {
 extension SomeViewController: SomeView {
     func show(result: [SomeModel]) {
         if collectionViewAdapter == nil {
-            collectionViewAdapter = CollectionViewAdapter(data: [], collectionView: collectionView, delegate: self, flowLayoutConfiguration: VerticalFlowLayoutConfiguration(collectionViewWidth: collectionView.bounds.width))
+            collectionViewAdapter = CollectionViewAdapter(data: [], collectionView: collectionView, delegate: self, flowLayoutConfiguration: VerticalFlowLayoutConfigurationForiPad(collectionViewWidth: collectionView.bounds.width))
         }
         collectionViewAdapter?.data = result
     }
